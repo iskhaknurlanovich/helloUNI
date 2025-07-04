@@ -1,0 +1,39 @@
+.main {
+  padding-block: 40px;
+  .mainPage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    @media (max-width: 680px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 30px;
+      text-align: center;
+      .title {
+        align-items: center;
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 400px;
+      object-fit: contain;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      width: 100%;
+      max-width: 500px;
+      h1 {
+        font-size: clamp(1.563rem, 0.994rem + 2.84vw, 3.125rem);
+        letter-spacing: 2px;
+      }
+      p {
+        color: rgba(110, 110, 110, 1);
+      }
+    }
+  }
+}

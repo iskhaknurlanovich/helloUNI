@@ -1,0 +1,57 @@
+.playGame {
+  padding-block: 40px;
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+  }
+
+  .games {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-block: 40px;
+    .oneGame {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+      color: white;
+      position: relative;
+      width: 100%;
+      max-width: 450px;
+      height: 200px;
+      border-radius: 10px;
+      img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 450px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .games {
+    flex-direction: column;
+  }
+}

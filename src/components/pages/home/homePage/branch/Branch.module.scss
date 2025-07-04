@@ -1,0 +1,25 @@
+.branch {
+  .branchTop {
+    text-align: center;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    p {
+      margin-block: 20px;
+      color: rgba(99, 99, 99, 1);
+      font-weight: 400;
+    }
+  }
+  .branches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .card {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+}

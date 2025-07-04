@@ -1,0 +1,327 @@
+.card1 {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(34, 60, 80, 0.1);
+  padding: 13px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  transition: 0.2s;
+  border: 1px solid #ececec;
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.18);
+    border-color: #d1d1d1;
+    transform: scale(1.02);
+  }
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    .markIcon {
+      font-size: 10px;
+      color: rgba(0, 0, 0, 0.31);
+    }
+    p {
+      color: rgba(0, 0, 0, 0.31);
+    }
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #222;
+    letter-spacing: 1px;
+  }
+  .logoIcon {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    .courseLogo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 8px;
+    }
+    span {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .star {
+      max-width: 120px;
+    }
+    p {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #222;
+      margin: 0;
+      margin-top: 4px;
+      text-align: right;
+    }
+    p.free {
+      color: green;
+    }
+  }
+}
+.card2 {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(34, 60, 80, 0.1);
+  padding: 13px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  transition: 0.2s;
+  border: 1px solid #ececec;
+  .price {
+    text-align: end;
+  }
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.18);
+    border-color: #d1d1d1;
+    transform: scale(1.02);
+  }
+  .btn {
+    display: none;
+  }
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .markIcon {
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.31);
+    }
+    p {
+      color: rgba(0, 0, 0, 0.31);
+    }
+  }
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #222;
+    letter-spacing: 1px;
+  }
+  .logoIcon {
+    display: none;
+  }
+  .stars {
+    display: none;
+  }
+}
+.card3 {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(34, 60, 80, 0.1);
+  padding: 13px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  transition: 0.2s;
+  border: 1px solid #ececec;
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.18);
+    border-color: #d1d1d1;
+    transform: scale(1.02);
+  }
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .markIcon {
+      font-size: 1.3rem;
+      color: rgba(0, 0, 0, 0.31);
+    }
+    p {
+      color: rgba(0, 0, 0, 0.31);
+    }
+  }
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #222;
+    letter-spacing: 1px;
+  }
+  .logoIcon {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    .courseLogo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 8px;
+    }
+    span {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .star {
+      max-width: 120px;
+    }
+    p {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #222;
+      margin: 0;
+      margin-top: 4px;
+      text-align: right;
+    }
+    p.free {
+      color: green;
+    }
+  }
+}
+.bookCard {
+  width: 150px;
+  min-height: 240px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #e0e0e0;
+  padding: 8px 8px 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 4px 16px #d1c4e9;
+  }
+  .bookImg {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .bookInfo {
+    width: 100%;
+    text-align: left;
+    margin-top: 8px;
+    .bookTitle {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #22223b;
+      margin: 0 0 4px 0;
+      line-height: 1.2;
+    }
+    .bookAuthor {
+      font-size: 0.95rem;
+      color: #6c6c80;
+      margin: 0;
+    }
+  }
+}
+.cardTime {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px 0 rgba(34, 60, 80, 0.1);
+  padding: 13px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  transition: 0.2s;
+  border: 1px solid #ececec;
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(34, 60, 80, 0.18);
+    border-color: #d1d1d1;
+    transform: scale(1.02);
+  }
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    .markIcon {
+      font-size: 10px;
+      color: rgba(0, 0, 0, 0.31);
+    }
+    p {
+      color: rgba(0, 0, 0, 0.31);
+    }
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #222;
+    letter-spacing: 1px;
+  }
+  .logoIcon {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    .courseLogo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 8px;
+    }
+    span {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+  .stars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .star {
+      max-width: 120px;
+    }
+    p {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #222;
+      margin: 0;
+      margin-top: 4px;
+      text-align: right;
+    }
+    p.free {
+      color: green;
+    }
+  }
+  @media (max-width: 450px) {
+    display: none;
+  }
+}

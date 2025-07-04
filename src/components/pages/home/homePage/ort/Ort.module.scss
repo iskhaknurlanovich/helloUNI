@@ -1,0 +1,58 @@
+.ort {
+  padding-block: 40px;
+  .ortMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    h1 {
+      font-size: 30px;
+    }
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}
+.cardTime {
+  display: none;
+}
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.341);
+  position: fixed;
+  top: 0;
+  left: 0;
+  .modalMain {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    .modalTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    p {
+      font-weight: 300;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.088);
+      padding-bottom: 15px;
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}

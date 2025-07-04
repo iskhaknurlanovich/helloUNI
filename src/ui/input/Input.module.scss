@@ -1,0 +1,28 @@
+.input {
+  width: 100%;
+  font-weight: 200;
+  padding: 10px 12px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 0;
+  outline: none;
+  transition: 0.2s;
+  &:focus {
+    border-color: #a084e8;
+  }
+}
+.input2 {
+  width: 100%;
+  font-weight: 200;
+  padding: 10px 12px 80px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 0;
+  outline: none;
+  transition: 0.2s;
+  &:focus {
+    border-color: #a084e8;
+  }
+}

@@ -1,0 +1,214 @@
+.bhtTest {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(164, 140, 240, 0.1),
+    0 1.5px 8px rgba(0, 0, 0, 0.04);
+  padding: 40px 32px 32px 32px;
+  max-width: 1000px;
+  margin: 48px auto;
+  font-family: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+
+    h2 {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .headerBottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0;
+      .progressBarWrapper {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .progressBar {
+        width: 160px;
+        height: 10px;
+        background: #ece6fa;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .progress {
+        height: 100%;
+        border-radius: 6px;
+        transition: width 0.3s;
+        background-color: #7c5fd6;
+      }
+      .timer {
+        color: #7c5fd6;
+        font-weight: 600;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .time {
+          font-size: 22px;
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+  .questionBlock {
+    margin-bottom: 32px;
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #3d2e7c;
+      margin-bottom: 18px;
+    }
+  }
+
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+    .answer {
+      background: #f6f6fb;
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 16.5px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      transition: 0.18s, box-shadow 0.18s, border 0.18s;
+      border: 2px solid transparent;
+      box-shadow: 0 1px 4px rgba(164, 140, 240, 0.04);
+      font-weight: 500;
+      span {
+        background: #a48cf0;
+        color: #fff;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 12px;
+        box-shadow: 0 2px 8px rgba(164, 140, 240, 0.1);
+      }
+      &:hover {
+        background: #ece6fa;
+        border: 2px solid #a48cf0;
+      }
+    }
+    .selected {
+      background: #ece6fa;
+      border: 2px solid #7c5fd6;
+      box-shadow: 0 2px 12px rgba(124, 95, 214, 0.1);
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 24px;
+    .prevBtn,
+    .nextBtn {
+      background-color: #7c5fd6;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      transition: 0.18s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 2px 8px rgba(164, 140, 240, 0.1);
+      &:hover {
+        box-shadow: 0 4px 16px rgba(124, 95, 214, 0.13);
+      }
+    }
+  }
+
+  .resultBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+    button {
+      margin-top: 12px;
+      padding: 12px 32px;
+      font-size: 1rem;
+      border-radius: 8px;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.18s;
+      &:hover {
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .bhtTest {
+    padding: 25px;
+    margin: 25px auto;
+    gap: 40px;
+    max-width: 400px;
+    .header {
+      gap: 30px;
+      h2 {
+        font-size: 1.8rem;
+      }
+      .headerBottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        .progressBarWrapper {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .answers {
+      .answer {
+        font-size: 15px;
+        padding: 14px 16px;
+      }
+    }
+
+    .navigation {
+      margin-top: 0;
+      .prevBtn,
+      .nextBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+}

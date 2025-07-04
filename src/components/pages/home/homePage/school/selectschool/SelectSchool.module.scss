@@ -1,0 +1,110 @@
+.selectSchools {
+  padding-block: 20px;
+  .select {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h1 {
+      text-align: center;
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      select {
+        padding: 5px 10px;
+        color: gray;
+        outline: none;
+        min-width: 230px;
+      }
+      button:hover {
+        color: white !important;
+        border-color: white;
+      }
+    }
+    .listTop {
+      background-color: RGB(238, 239, 253);
+      padding: 10px 20px;
+      width: 100%;
+    }
+    .variant {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      .details {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 10px;
+        img {
+          width: 100%;
+          max-width: 300px;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 10px;
+          box-shadow: 0 2px 8px rgba(164, 140, 240, 0.1);
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 1.08rem;
+          width: 100%;
+          .infos {
+            display: flex;
+            gap: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 10px;
+            p {
+              width: 100%;
+              max-width: 170px;
+              font-weight: 300;
+            }
+            b {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .choose {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      background-color: RGB(250, 251, 253);
+      padding: 20px;
+      border: 1px solid RGB(238, 238, 238);
+      font-size: 1.08rem;
+      font-weight: 500;
+      background: #fafbfc;
+      border-radius: 10px;
+      margin-bottom: 8px;
+      transition: 0.15s;
+      &:hover {
+        background: #ece6fa;
+      }
+      span:last-child {
+        color: #7c5fd6;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .details {
+    flex-direction: column;
+    img {
+      max-width: 500px !important;
+      height: 200px !important;
+    }
+    .info .infos {
+      gap: 10px !important;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.onlineTestList {
+  padding: 32px 16px;
+  .title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 20px;
+    justify-content: center;
+
+    // width: 100%;
+    // max-width: 1060px;
+    // margin: 0 auto;
+  }
+
+  .startBtn {
+    transition: 0.18s;
+    margin-top: 8px;
+    &:hover {
+      background: #a48cf0;
+    }
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  .modalContent {
+    background-color: white;
+    width: 100%;
+    max-width: 370px;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    .exit {
+      font-size: 20px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .onlineTestList {
+    .list {
+      gap: 18px;
+    }
+    .card {
+      padding: 18px 10px 14px;
+    }
+    .title {
+      font-size: 1.4rem;
+    }
+  }
+}

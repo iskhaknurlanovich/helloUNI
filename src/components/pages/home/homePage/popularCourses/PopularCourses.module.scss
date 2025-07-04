@@ -1,0 +1,33 @@
+.courses {
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .courseTop {
+    text-align: center;
+    margin-inline: auto;
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.523);
+      margin: 0 10px;
+      margin-block: 10px 20px;
+      line-height: 30px;
+    }
+  }
+  .course {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+  .allCourses {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.491);
+    font-weight: 200;
+    padding-block: 20px 30px;
+  }
+}

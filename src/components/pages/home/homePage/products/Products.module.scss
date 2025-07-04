@@ -1,0 +1,39 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-block: 70px;
+  @media (max-width: 680px) {
+    justify-content: center;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 490px;
+    text-align: center;
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      color: rgba(0, 0, 0, 0.429);
+      letter-spacing: 1px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  .product {
+    transition: 0.4s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
